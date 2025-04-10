@@ -37,7 +37,7 @@ const form = document.getElementById('pedido-form');
       mensagem += `\nEndereço: ${endereco}`;
       mensagem += `\nObservações: ${obs || "Nenhuma"}`;
       mensagem += `\n\nObrigado!`;
-      mensagem += `\n#PEDIDO_SITE`;
+      mensagem += `\n\n#PEDIDO_SITE`;
 
 
       const telefone = '557981479945'; // Substituir pelo número do restaurante
