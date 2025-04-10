@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Restaurante Fictício</title>
+  <link rel="stylesheet" href="./src/css/reset.css" />
+  <link rel="stylesheet" href="./src/css/style.css" />
+</head>
+<body>
+  <h1>Faça seu Pedido</h1>
+  <form id="pedido-form">
+    <label for="nome">Nome</label>
+    <input type="text" id="nome" name="nome" required />
+
+    <label for="endereco">Endereço para entrega</label>
+    <input type="text" id="endereco" name="endereco" required />
+
+    <label for="item">Item do Cardápio</label>
+    <select id="item" name="item">
+      <optgroup label="Promoções">
+        <option value="Promoção do Dia">Combo Especial + Refri — 24,99</option>
+      </optgroup>
+      <optgroup label="Burgers">
+        <option value="Classic Burger">Classic Burger — 8,99</option>
+        <option value="Cheeseburger">Cheeseburger — 9,99</option>
+        <option value="Bacon Burger">Bacon Burger — 10,99</option>
+      </optgroup>
+      <optgroup label="Pizzas">
+        <option value="Margherita">Margherita — 10,99</option>
+        <option value="Pepperoni">Pepperoni — 12,99</option>
+        <option value="Veggie">Veggie — 11,99</option>
+      </optgroup>
+      <optgroup label="Side Dishes">
+        <option value="French Fries">French Fries — 3,99</option>
+        <option value="Onion Rings">Onion Rings — 4,99</option>
+        <option value="Mozzarella Sticks">Mozzarella Sticks — 5,99</option>
+      </optgroup>
+      <optgroup label="Drinks">
+        <option value="Soda">Soda — 1,99</option>
+        <option value="Iced Tea">Iced Tea — 2,49</option>
+      </optgroup>
+    </select>
+
+    <label for="quantidade">Quantidade</label>
+    <input type="number" id="quantidade" name="quantidade" min="1" value="1" />
+
+    <button type="button" id="adicionar">Adicionar ao Pedido</button>
+
+    <div id="itens-adicionados" style="margin-top: 1rem;"></div>
+
+    <label for="obs">Observações</label>
+    <textarea id="obs" name="obs" rows="3" placeholder="Sem cebola, ponto da carne, etc..."></textarea>
+
+    <button type="submit">Enviar Pedido</button>
+  </form>
+  <script src="./src/js/script.js"></script>
+</body>
+</html>
