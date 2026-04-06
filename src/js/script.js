@@ -40,7 +40,7 @@ const form = document.getElementById('pedido-form');
       mensagem += `\n\n#PEDIDO_SITE`;
 
 
-      const telefone = '557981479945'; // Substituir pelo número do restaurante
+      const telefone = '5599999999999'; // Substituir pelo número do restaurante
       const url = `https://wa.me/${telefone}?text=${encodeURIComponent(mensagem)}`;
       window.open(url, '_blank');
     });
